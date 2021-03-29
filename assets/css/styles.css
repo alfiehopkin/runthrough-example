@@ -1,0 +1,147 @@
+/* base styling */
+body {
+    background-color: #020024;
+    color: white;
+}
+
+/* section styling */
+section {
+    padding: 40px;
+}
+
+section h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* removing the margin from the last paragraph */
+section > p:last-child {
+    margin-bottom: 0;
+}
+
+/* removing the margin from the last list item paragraph */
+section .list .item:last-child p {
+    margin-bottom: 0;
+}
+
+/* header styling section */
+header .menu {
+    align-items: center;
+}
+
+header .menu .logo a {
+    display: flex;
+    align-items: center;
+}
+
+header .menu .logo a img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header img {
+    transform: scale(1) rotate(0);
+    transition: all 800ms ease-in-out;
+}
+
+header .hero:hover img {
+    transform: scale(1.08) rotate(360deg);
+}
+
+/* about section styling */
+@media screen and (min-width: 977px) {
+    #about .wrapper .headlines {
+        display: flex;
+    }
+
+    #about .wrapper .headlines .headline {
+        flex: 1;
+        margin-right: 30px;
+        text-align: justify
+    }
+
+    #about .wrapper .headlines .headline:last-child {
+        margin-right: 0;
+    }
+}
+
+/* features styling section */
+#features {
+    background: #f2f2f2;
+    color: #272727;
+}
+
+#features .content {
+    display: flex;
+    flex-direction: column;
+}
+
+#features .slider-container {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+#features .slider-container .slider {
+    width: 100%;
+}
+
+#features .slider-container .slider img {
+    width: 100%;
+}
+
+#features .features .feature ul {
+    background: white;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+#features .features .feature ul li {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+#features .features .feature ul li span {
+    font-weight: 700;
+    color: #00d578;
+}
+
+#features .features .feature ul li:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 977px) {
+    #features .content {
+        flex-direction: row-reverse;
+    }
+
+    #features .content > div {
+        flex: 1;
+    }
+
+    #features .slider-container {
+        max-width: 500px;
+        padding-left: 40px;
+        padding-right: 0;
+    }
+}
+
+/* FAQs styling section */
+#faq {
+    background: rgb(2,0,36);
+    background: linear-gradient(348deg, rgba(2,0,36,1) 0%, rgba(7,7,102,1) 33%, rgba(9,9,121,1) 44%, rgba(0,41,255,1) 100%);
+}
+
+@media screen and (min-width: 977px) {
+    #faq .wrapper {
+        max-width: 640px;
+    }
+}
+
+/* back to top button styling section */
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}

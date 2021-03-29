@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoker - The Laravel Client</title>
+
+    <!-- font import -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- invoker base styling -->
+    <link rel="stylesheet" href="assets/invoker/css/invoker.css">
+    
+    <!-- custom styling -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- slick styling -->
+    <link rel="stylesheet" href="assets/slick/slick.css">
+    <link rel="stylesheet" href="assets/slick/slick-theme.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="wrapper">
+            <!-- header menu -->
+            <div class="menu">
+                <!-- header menu logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="Invoker Logo">
+                        <span>Invoker</span>
+                    </a>
+                </div>
+        
+                <!-- header menu navigation -->
+                <nav>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#header" class="btn btn-white">Notify me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <!-- header content -->
+            <div class="content">
+                <div class="content-wrapper">
+                    <!-- header text -->
+                    <div class="text">
+                        <h1>The Laravel Client</h1>
+                        <p>Invoker is like an admin panel for all your Laravel applications. Open local applications or remote sites, and access Eloquent models plus their relationships without building a GUI.</p>
+                        <p>Subscribe for updates and get a notification when we launch version 2.</p>
+                        <div class="subscribe">
+                            <input type="text" placeholder="Enter your email">
+                            <button class="btn btn-white">Subscribe</button>
+                        </div>
+                    </div>
+            
+                    <!-- header image -->
+                    <div class="hero">
+                        <img src="assets/invoker/img/header.png" alt="Invoker hero image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- about -->
+    <section id="about">
+        <div class="wrapper">
+            <h3>About</h3>
+
+            <div class="list headlines">
+                <div class="item headline">
+                    <h4>Remote Access</h4>
+                    <p>Invoker works perfectly with both local apps and remote sites. Import your sites from Laravel Forge or connect over SSH to a remote server.</p>
+                </div>
+                <div class="item headline">
+                    <h4>Built for Artisans</h4>
+                    <p>Invoker is built specifically for Laravel developers like you. Its opinionated design and focus on Eloquent makes it the perfect companion.</p>
+                </div>
+                <div class="item headline">
+                    <h4>No Code required</h4>
+                    <p>Invoker is a “no-code” desktop application, just add your site, and you'll be all set!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features -->
+    <section id="features">
+        <div class="wrapper">
+            <h3>Features / What is Invoker about</h3>
+
+            <div class="content">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div><img src="assets/images/slide_1.png" alt="Invoker slider image 1"></div>
+                        <div><img src="assets/images/slide_2.png" alt="Invoker slider image 2"></div>
+                        <div><img src="assets/images/slide_3.png" alt="Invoker slider image 3"></div>
+                        <div><img src="assets/images/slide_4.png" alt="Invoker slider image 4"></div>
+                        <div><img src="assets/images/slide_5.png" alt="Invoker slider image 5"></div>
+                    </div>
+                </div>
+    
+                <div class="list features">
+                    <div class="item feature">
+                        <h4>Manage Resources</h4>
+                        <p>
+                            View, create, and edit existing resources. Access relations and custom accessors. Filter results by defined scopes.
+                            <ul>
+                                <li><span>Relationships</span> - Walk across and manage relationships from a user-friendly interface. Work with any type of relations, including polymorphic ones.</li>
+                                <li><span>Native experience</span> - View and manage data by the appropriate type of field, whether it’s a simple input, date-picker, or dynamic select for a foreign key column.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="item feature">
+                        <h4>Run Artisan Commands</h4>
+                        <p>Automatically detect all artisan commands of your application and run them from a convenient GUI.</p>
+                    </div>
+                    <div class="item feature">
+                        <h4>Preview Emails</h4>
+                        <p>Preview emails with real world data directly from your application without sending them.</p>
+                        <p>Invoker detects all variables of a Mailable and lets you fill them with real data from your application. This perfectly pairs with our email testing tool HELO.</p>
+                    </div>
+                    <div class="item feature">
+                        <h4>Powerful Plugin Architecture</h4>
+                        <p>Invoker has a powerful plugin architecture that allows you to build custom functionality into your Invoker client.</p>
+                        <p>You can install plugins globally on your machine or add them to your application so that all Invoker users have access to them in an application via SSH.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- faq -->
+    <section id="faq">
+        <div class="wrapper">
+            <h3>Frequently Asked Questions</h3>
+
+            <div class="list questions">
+                <div class="item question">
+                    <h4>Is Invoker safe to use for non-tech users?</h4>
+                    <p>Invoker gives you full access to the application. Please use Laravel Nova to build a secure admin panel for users of your application.</p>
+                </div>
+                <div class="item question">
+                    <h4>Is Invoker a replacement for an admin interface?</h4>
+                    <p>Invoker can be used by developers with technical knowledge, but we recommend using Laravel Nova to build a rich interface for your users.</p>
+                </div>
+                <div class="item question">
+                    <h4>Is any third-party software required?</h4>
+                    <p>Invoker only requires locally installed PHP of any version above 7.2.5. It works perfectly with newest PHP 7.4.</p>
+                </div>
+                <div class="item question">
+                    <h4>What platforms are supported?</h4>
+                    <p>Invoker runs on macOS, Windows and Linux. We focus on Debian derivatives and can't guarantee others.</p>
+                </div>
+                <div class="item question">
+                    <h4>Why does it only work with Laravel?</h4>
+                    <p>Invoker uses the magic of Eloquent ORM, so it only supports Laravel.</p>
+                </div>
+                <div class="item question">
+                    <h4>What Laravel versions are supported?</h4>
+                    <p>Invoker supports Laravel 5.6+ and above. We highly recommend to always upgrade to the latest version of Laravel.</p>
+                </div>
+                <div class="item question">
+                    <h4>I have bought version 1, do need to buy version 2?</h4>
+                    <p>Absolutely not! We migrate your license to version 2 and even add one year of free updates starting at the launch day free of charge.</p>
+                </div>
+                <div class="item question">
+                    <h4>Where do I download version 1?</h4>
+                    <p>We don't have an official download link for the legacy version at the moment. If you have to download version 1 again, please send us an email with your license key to support@beyondco.de.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <p>Invoker Designs. 2021.</p>
+    </footer>
+
+    <!-- back to top button -->
+    <div id="back-to-top">
+        <a href="#" class="btn btn-white">Back to top</a>
+    </div>
+
+    <!-- jQuery scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- slick scripts -->
+    <script src="assets/slick/slick.min.js"></script>
+
+    <!-- slider scripts -->
+    <script>
+        $('#features .slider').slick({
+            infinite: false
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, a, input, select, textarea, button {
+    font-family: 'Poppins', system-ui, Arial, Helvetica, sans-serif;
+    color: #272727;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1064px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header {
+    background: rgb(2,0,36);
+    background: linear-gradient(348deg, rgba(2,0,36,1) 0%, rgba(7,7,102,1) 33%, rgba(9,9,121,1) 44%, rgba(0,41,255,1) 100%);
+    min-height: 600px;
+    padding: 40px;
+    display: flex;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 40px;
+}
+
+header .menu .logo a {
+    color: white;
+    font-size: 26px;
+}
+
+header .menu nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header .menu nav ul li {
+    margin: 0 20px;
+}
+
+header .menu nav ul li:first-child {
+    margin-left: 0;
+}
+
+header .menu nav ul li:last-child {
+    margin-right: 0;
+}
+
+header .menu nav ul li a {
+    color: white;
+}
+
+header .content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+header .content .content-wrapper {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 977px) {
+    header .content .content-wrapper {
+        flex-direction: row;
+    }
+}
+
+header .content .content-wrapper .text {
+    flex: 1;
+    margin-bottom: 40px;
+    color: white;
+}
+
+@media screen and (min-width: 977px) {
+    header .content .content-wrapper .text {
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+}
+
+header .content .content-wrapper .text h1 {
+    margin-bottom: 20px;
+}
+
+header .content .content-wrapper .text p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+header .content .content-wrapper .text .subscribe {
+    display: flex;
+}
+
+header .content .content-wrapper .text .subscribe input {
+    flex: 1;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+}
+
+header .content .content-wrapper .hero {
+    flex: 1;
+}
+
+header .content .content-wrapper .hero img {
+    width: 100%;
+}
+
+.btn {
+    padding: 12px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.btn.btn-white {
+    background-color: white;
+    color: #272727;
+}
